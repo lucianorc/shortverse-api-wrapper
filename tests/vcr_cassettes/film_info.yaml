@@ -1,0 +1,85 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.2
+    method: GET
+    uri: https://api.shortverse.com/v1/film/me-time-1
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAEA+1a247jNhL9FULzkIe13bpZFwP70OnZ7EyQC5BMtoHEgUFJlM2xLHolqhVn0P++
+        p0RJtrung1lMAiwW6pe2eCkWyTp1ikV+sPhWbCquZbm1Vo49s3gpD1yLbNNUhbWyLJQ8cFnwpBAb
+        rq1V2RTFzMoa6qNKa+W76CTKbKPlQVgrfOx4vVEPoir4yVrlvKiFKTvyum5VlV0XVuJBinYsk6gO
+        gtCZWbLeQJGmgtBeyFkAqTV8Uat01418rMRBikpsao2etSlrkkKmUp82+nQ0Ch6HImu1hL6VKASv
+        MWOanuXarje33bnjYIxaNVUq+qXYaX2sV+ub9c1JNbpZJAK/3m7r1w/eP//9vY/musJKicq0NwsF
+        TSp9XpvmmHWLez2U984JV8tw5ccLu/v7GcLM+q9vclkc6vXNQcxpheekViuSWmpMhtYhVaUWJVT/
+        YNHiOX4c+VClm6yH6dVNMs5cS11Qt28Fe0fbhdqiwcZbl9L/YOBxLOs216JinB2aQst5K8SeHSuV
+        NSlZBWul3qEyh62wtBIt0ztZM+yYZnVzOIhqxt6iTDXbnWZSf5GxRKB1ybRimWK1Ogj0KLeslkVx
+        YrzMWK0reTyKDPUtBthhmyEjVU2Bup1qmcpzdjihevtFzTj0oO579K8X7A4CWa4qjClYnfJK1DNI
+        5KdzoUJznmBjWVI1dTc4thk9BFRZYKUyUadQwVi9dYuZQVbLsfgZ/mFIVkiN5WW0TYwXqkQ1rQNN
+        HVot2P2Oa+q0Vbrr0WL8VsgqExUNgFl0pvJsi7ryzx6+M5VCVZtjBYRXwKaxHiqqBXY2M4WvjAmO
+        zbHPWj5pj6UU20o1JQyucxFFodpNqrC1pTa4A3wx0AOs/RqGBnMjBM+oRIfR01grXTVwG2PBE2wC
+        MMHKjVe2fwmYT8XW48wiUB34XlRQ9oMFTHJr9UsPoDBw4hEYsuY8nVeN3mFBEqkw37dUxH5AEcPO
+        8pLxllfZvJVlSTbXVoAmoAGbzWQlUg2zg9vbU50sGY08Y+/+NetbbKXmBTuITPIFe8MfqFkiBKSW
+        DIXoPTvLUTk77pRW24ofd6cZzP9wVDXBKVXYR1lrmDVtC4O5yG1JNaSIgSa0ggJlA/ypBnCs1Huo
+        ByQQKI4ilbyQv4uaGu2MIpztSRVxglUrmiXsumA5T4WuAbhuMlhG6EwGXHJigIv1QRnB3RjPfbcu
+        6/XrYVEwzDeqZrflFg4YWtzdov3gfI7YGlWub67W/8rvEcQfDCednbb3znXJMNz4b7a9sm1IhIso
+        dWfuP/1In6ACKHkxMgq75X9mCW7gu+Gg0tn7m73q0AqWq8UCu0D+GTu4vmmwG+ubmNt5uEwyN+CO
+        yB034vi9jGzfW9oBD+z1jfObN7937L/PvVwESRyFeeiLIIqE78RJnmWhHXspz1J/8f4otlDxyGGC
+        K+uvH+gA99Wj0oKj2ILlehUMjYCaR0rxoNc1mY6fZ2CDAK44D9xqzz2HgfM8b7VcYnJPafGyiQ+U
+        o0kmNMh1YDk3cBy337cN0V6/V0klQSmlqMkJLTzguAPGhc975XzphE4AiabmyvVFdvhlGI51F67v
+        7BUBMzi5PvrBArQyo52JbAp9BA3ffTw+/go/Q+Yw6OzF3hIuLe0Msl8eCp4qRZxMvwbjp16g/M72
+        35PviaOITJnKe5A9q/tUOFB0lja1BiNCM+NmqQx7esFvfcQ14eIMwAkXfxouDDZ2qlQdOHr6Jbzg
+        nCE6kF9TMrBhnA8i2wdeNEQzXYDeYRgfr+Lg7iuXYmNEjnwDNjf13VdiTi2PM0PwFPM/k+YNkyNh
+        QRgvb8lFjMKo+mOyEG3DBRhp0Vk3wzREycOBaZTUVb0gaozb4beGaYryrJk5UoyiuqorUbSEH8es
+        F7rLYPAwn8hlFKqsbyI79T0nT/M4FbEdRlEaL4WX8IDHebR0QA/Ob85cnL5us/uva37/3TF7s5ff
+        v/+p/ebusqzIszdF+/OPb4Nv34D38jwQfhiCHEWSZpnNfdtOhO0GEc+9OHFf4r3/CaX+G18AvhxJ
+        8cXg9ylHmiOoxxDmej6OhrCBpxx52WT5MY70cI6GTXb20HFkbwPXHIkWzyjyq3/QGWCwu+vTwWv3
+        Lrz9OEW6vus4EbpdUSTm31OkF/mA3sCRrhPYxhGYFAAYqA8Vf/mVdKKzBLxAl2QYQ3QycDpQPo/V
+        /HgJ+BguxZDIMxC/YTwTSQ4k7EzR/RTdd4mSKbqfovshsTFF9+f8x4SLCRefhYvHxyHSdkHKOPL2
+        B9yRlCki6tI7EylPKbfr5OvkfCbn81nOxyTJBscypdymVPTlze/TY/Zlnvn/OxUNUu7ya7LcX5yd
+        qQjXqVOOerq7oUzJcJUz3d0QMKYYdboWhl+4cJfm/mCKUacY9TNjVLq0MTdcY2a7t604sJGRN66n
+        S9r3Ceu9oFcLssSjJTz+OCDJPlwQnS9z2rZdjC3Mq4TzNbE1HsoxBO6XXhpC480S7r1fHKCv/yPx
+        9IzwJfH0diRRan8h30JkgpSBRY/2CGyF3Au8JcKrjS5/T88Dh08HNwb/AVN/bJqzKAAA
+    headers:
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Accept,Authorization,Cache-Control,Content-Type,DNT,If-Modified-Since,Keep-Alive,Origin,User-Agent,X-Requested-With,x-xsrf-token
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Cache-Control:
+      - public
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 13 Feb 2023 22:34:02 GMT
+      Referrer-Policy:
+      - origin
+      Server:
+      - nginx
+      Set-Cookie:
+      - sw5_session=JA3jZrjH8VEXjr03D2A0Os3y5ciyOKN88irLqYX1; path=/; domain=.shortverse.com;
+        httponly; samesite=lax
+      Transfer-Encoding:
+      - chunked
+      X-RateLimit-Limit:
+      - '60'
+      X-RateLimit-Remaining:
+      - '58'
+    status:
+      code: 200
+      message: OK
+version: 1
