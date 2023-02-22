@@ -1,18 +1,18 @@
-from .api import session
+from .api import APIClient
 
 
 class Film(object):
-    def __init__(self, slug: str):
-        self.slug = slug
-        self._path = "https://api.shortverse.com/v1"
+    def __init__(self):
+        self.__client = APIClient()
+        self.__session = self.__client.get_session()
 
-    def info(self):
-        path = "{}/film/{}".format(self._path, self.slug)
-        response = session.get(path)
-        return response.json()
+    def __url_path(self, slug: str = None):
+        if slug:
+            return self.__client.film_resource() + f"/{slug}"
 
-    @staticmethod
-    def latest():
-        path = "https://api.shortverse.com/v1/film"
-        response = session.get(path)
+        return self.__client.film_resource()
+
+    def get(self, slug: str = None):
+        path = self.__url_path(slug)
+        response = self.__session.get(path)
         return response.json()
