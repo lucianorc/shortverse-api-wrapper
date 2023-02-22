@@ -1,7 +1,8 @@
 from src import Film
-from src.dto.film import FilmDTO, ContentDTO
+from src.dto.film import FilmDTO, ContentDTO, FilmListDTO, MetadataDTO
 
 import datetime
+from typing import List
 
 from pytest import fixture
 import vcr
@@ -38,7 +39,7 @@ def test_if_can_get_film(film_keys):
 
 
 @vcr.use_cassette("tests/vcr_cassettes/film_info.yaml")
-def test_if_can_get_film_content_has_right_datetime_instances(film_keys):
+def test_if_can_get_film_content_has_right_datetime_instances():
     response = Film().get("anaconda")
     assert isinstance(response.updated_at, datetime.datetime)
     assert isinstance(response.available_at, datetime.datetime)
@@ -48,7 +49,10 @@ def test_if_can_get_film_content_has_right_datetime_instances(film_keys):
 def test_if_can_get_latest_films_list(film_keys):
     response = Film().get()
 
-    assert isinstance(response, dict)
-    assert isinstance(response["data"], list)
-    assert isinstance(response["data"][0], dict)
-    assert set(film_keys).issubset(response["data"][0].keys())
+    assert isinstance(response, FilmListDTO), "Must be an instance of FilmListDTO"
+    assert isinstance(response.items, List), "Must be an instance of a List of FilmDTO"
+    assert isinstance(response.items[0], FilmDTO), "Must be an instance of FilmDTO"
+    assert isinstance(
+        response.meta, MetadataDTO
+    ), "Must be an instance of Film's MetadataDTO"
+    assert set(film_keys).issubset(response.data[0].keys())

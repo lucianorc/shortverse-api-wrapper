@@ -1,5 +1,5 @@
 from .api import APIClient
-from .dto.film import FilmDTO
+from .dto.film import FilmDTO, FilmListDTO
 
 
 class Film(object):
@@ -13,7 +13,7 @@ class Film(object):
             return self.__get_by_slug(slug)
 
         response = self.__session.get(self.__path)
-        return response.json()
+        return FilmListDTO(**response.json())
 
     def __get_by_slug(self, slug: str = None):
         response = self.__session.get(self.__path + f"/{slug}")

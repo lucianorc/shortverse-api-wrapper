@@ -36,13 +36,14 @@ class FilmDTO(BaseDTO):
     media: None
     review_summary: None
     commendation: None
-    crew: None
-    link: None
-    owner: None
-    stat: None
+    crew: None = None
+    link: None = None
+    owner: None = None
+    stat: None = None
 
     def __post_init__(self) -> None:
         self.content = ContentDTO(**self.content)
         self.updated_at = self._BaseDTO__format_date_by_string(str(self.updated_at))
         self.available_at = self._BaseDTO__format_date_by_string(str(self.available_at))
-        self.released_at = datetime.date.fromisoformat(self.released_at)
+        if type(self.released_at) is str:
+            self.released_at = datetime.date.fromisoformat(self.released_at)
