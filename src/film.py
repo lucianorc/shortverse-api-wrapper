@@ -1,18 +1,20 @@
 from .api import APIClient
+from .dto.film import FilmDTO
 
 
 class Film(object):
     def __init__(self):
         self.__client = APIClient()
         self.__session = self.__client.get_session()
-
-    def __url_path(self, slug: str = None):
-        if slug:
-            return self.__client.film_resource() + f"/{slug}"
-
-        return self.__client.film_resource()
+        self.__path = self.__client.film_resource()
 
     def get(self, slug: str = None):
-        path = self.__url_path(slug)
-        response = self.__session.get(path)
+        if slug:
+            return self.__get_by_slug(slug)
+
+        response = self.__session.get(self.__path)
         return response.json()
+
+    def __get_by_slug(self, slug: str = None):
+        response = self.__session.get(self.__path + f"/{slug}")
+        return FilmDTO(**response.json())

@@ -1,4 +1,6 @@
 from src import Film
+from src.dto.film import FilmDTO, ContentDTO
+
 from pytest import fixture
 import vcr
 
@@ -23,9 +25,12 @@ def film_keys():
 def test_if_can_get_film(film_keys):
     film_instance = Film()
     response = film_instance.get("me-time-1")
-    assert isinstance(response, dict)
-    assert response["content"]["slug"] == "me-time-1", "Film slug should be in response"
-    assert set(film_keys).issubset(response.keys()), "All keys should be in response"
+    assert isinstance(response, FilmDTO)
+    assert isinstance(response.content, ContentDTO)
+    assert response.content.slug == "me-time-1", "Film slug should be in response"
+    assert set(film_keys).issubset(
+        response.__annotations__
+    ), "All keys should be in response"
 
 
 @vcr.use_cassette("tests/vcr_cassettes/latest_films_list.yaml")
