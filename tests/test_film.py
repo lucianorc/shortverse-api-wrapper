@@ -25,8 +25,8 @@ def film_keys():
 
 @vcr.use_cassette("tests/vcr_cassettes/film_info.yaml")
 def test_if_can_get_film(film_keys):
-    film_instance = Film()
-    response = film_instance.get("anaconda")
+    response = Film().get("anaconda")
+
     assert isinstance(response, FilmDTO)
     assert isinstance(response.content, ContentDTO)
     assert isinstance(response.updated_at, datetime.datetime)
@@ -35,6 +35,13 @@ def test_if_can_get_film(film_keys):
     assert set(film_keys).issubset(
         response.__annotations__
     ), "All keys should be in response"
+
+
+@vcr.use_cassette("tests/vcr_cassettes/film_info.yaml")
+def test_if_can_get_film_content_has_right_datetime_instances(film_keys):
+    response = Film().get("anaconda")
+    assert isinstance(response.updated_at, datetime.datetime)
+    assert isinstance(response.available_at, datetime.datetime)
 
 
 @vcr.use_cassette("tests/vcr_cassettes/latest_films_list.yaml")

@@ -1,11 +1,12 @@
-from dataclasses import dataclass, fields, _MISSING_TYPE
+from dataclasses import dataclass
 import datetime
 
 from .content import ContentDTO
+from src.dto import BaseDTO
 
 
 @dataclass(kw_only=True)
-class FilmDTO:
+class FilmDTO(BaseDTO):
     age_rating: int
     animated_url: str
     available_at: datetime.datetime
@@ -42,12 +43,6 @@ class FilmDTO:
 
     def __post_init__(self) -> None:
         self.content = ContentDTO(**self.content)
-        self.updated_at = self.__format_date_by_string(str(self.updated_at))
-        self.available_at = self.__format_date_by_string(str(self.available_at))
+        self.updated_at = self._BaseDTO__format_date_by_string(str(self.updated_at))
+        self.available_at = self._BaseDTO__format_date_by_string(str(self.available_at))
         self.released_at = datetime.date.fromisoformat(self.released_at)
-
-    def __format_date_by_string(self, date: str) -> datetime.datetime | None:
-        if date != "None":
-            return datetime.datetime.strptime(str(date), "%Y-%m-%dT%H:%M:%S.%fZ")
-
-        return None
