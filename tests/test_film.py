@@ -24,10 +24,12 @@ def film_keys():
 @vcr.use_cassette("tests/vcr_cassettes/film_info.yaml")
 def test_if_can_get_film(film_keys):
     film_instance = Film()
-    response = film_instance.get("me-time-1")
+    response = film_instance.get("youre-now-beyond-hope-arizona")
     assert isinstance(response, FilmDTO)
     assert isinstance(response.content, ContentDTO)
-    assert response.content.slug == "me-time-1", "Film slug should be in response"
+    assert (
+        response.content.slug == "youre-now-beyond-hope-arizona"
+    ), "Film slug should be in response"
     assert set(film_keys).issubset(
         response.__annotations__
     ), "All keys should be in response"
