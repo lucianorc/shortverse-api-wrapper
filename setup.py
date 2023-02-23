@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="shortverse_api_wrapper",
+    name="shortverse_wrapper",
     author="Luciano Costa",
     author_email="lcosta_96@hotmail.com.br",
     description="API Wrapper written in Python for Shortverse API",
