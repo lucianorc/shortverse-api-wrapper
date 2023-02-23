@@ -2,7 +2,7 @@ from dataclasses import dataclass
 import datetime
 
 from .content import ContentDTO
-from src.dto import BaseDTO
+from src.shortverse_wrapper.dto import BaseDTO
 
 
 @dataclass(kw_only=True)

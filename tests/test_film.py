@@ -1,5 +1,10 @@
-from src import Film
-from src.dto.film import FilmDTO, ContentDTO, FilmListDTO, MetadataDTO
+from src.shortverse_wrapper import Film
+from src.shortverse_wrapper.dto.film import (
+    FilmDTO,
+    ContentDTO,
+    FilmListDTO,
+    MetadataDTO,
+)
 
 import datetime
 from typing import List
