@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 import datetime
 
-from src.shortverse_wrapper.dto import BaseDTO
+from ...dto import BaseDTO
 
 
 @dataclass
