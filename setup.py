@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="shortverse_wrapper",
+    name="shortverse_api_wrapper",
     author="Luciano Costa",
     author_email="lcosta_96@hotmail.com.br",
     description="API Wrapper written in Python for Shortverse API",
@@ -12,7 +12,9 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/lucianorc/shortverse-api-wrapper",
-    project_urls={},
+    project_urls={
+        "Bug reports": "https://github.com/lucianorc/shortverse-api-wrapper/issues"
+    },
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     classifiers=[
