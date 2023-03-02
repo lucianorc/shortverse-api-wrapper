@@ -15,7 +15,7 @@ class APIClient(object):
         return self.__session
 
     def base_url(self) -> str:
-        return self.__base_url()
+        return self.__base_url
 
     def film_resource(self) -> str:
-        return "%s/film" % self.__base_url
+        return "%s/film" % self.base_url()
