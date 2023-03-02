@@ -31,6 +31,8 @@ def dummy_films():
 
 @fixture(scope="class")
 def dummy_storage(request, dummy_films: list):
+    FilmStorage.__abstractmethods__ = set()
+
     class DummyStorage(FilmStorage):
         def get_film(self, slug: str) -> FilmDTO:
             film = list(filter(lambda f: f.slug == slug, dummy_films))

@@ -18,37 +18,3 @@ class FilmDTO(object):
     available_at: datetime
     released_at: datetime
     updated_at: datetime
-
-    def to_domain(self) -> Film:
-        film = Film(
-            self.id,
-            self.slug,
-            self.name,
-            self.description,
-            self.duration,
-            self.mature,
-            self.source_url,
-            self.trailer_url,
-            self.available_at,
-            self.released_at,
-            self.updated_at,
-        )
-
-        return film
-
-    def to_dto(self, film: Film):
-        film_dto = FilmDTO(
-            film.id,
-            film.slug,
-            film.name,
-            film.description,
-            film.duration,
-            film.mature,
-            film.source_url,
-            film.trailer_url,
-            film.available_at,
-            film.released_at,
-            film.updated_at,
-        )
-
-        return film_dto
