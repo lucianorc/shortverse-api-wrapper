@@ -1,5 +1,5 @@
-from src.shortverse_wrapper import Film
-from src.shortverse_wrapper.dto.film import (
+from src.shortverse_service import Film
+from src.shortverse_service.dto.film import (
     FilmDTO,
     ContentDTO,
     FilmListDTO,
