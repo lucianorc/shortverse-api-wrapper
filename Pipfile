@@ -10,8 +10,8 @@ requests = "*"
 black = "*"
 pytest = "*"
 pytest-cov = "*"
-vcrpy = "*"
 ipython = "*"
+pytest-recording = "*"
 
 [requires]
 python_version = "3.10"
