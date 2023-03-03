@@ -1,0 +1,31 @@
+<addon id="plugin.video.shortverse" name="Shortverse" version="0.0.1" provider-name="lucianorc">
+	<requires>
+		<import addon="xbmc.python" version="3.10.0" />
+		<import addon="script.module.requests" version="2.27.1" />
+		<import addon="script.module.youtube.dl" version="21.303.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_US">Shortverse Add-on</summary>
+		<description lang="en_US">
+			A simple indenpendent Kodi client to watch independent short films published in
+			Shortverse
+		</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<source>https://github.com/lucianorc/plugin.video.shortverse</source>
+		<!-- <forum>http://forum.kodi.tv/showthread.php?tid=<tbp></forum> -->
+		<website>https://shortverse.com</website>
+		<platform>all</platform>
+		<language>en</language>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/assets/fanart.jpg</fanart>
+			<!-- <screenshot>resources/screenshots/screenshot000.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot001.jpg</screenshot>
+			<screenshot>resources/screenshots/screenshot002.jpg</screenshot> -->
+		</assets>
+		<reuselanguageinvoker>true</reuselanguageinvoker>
+	</extension>
+</addon>
