@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 requests = "*"
+kodistubs = "*"
+youtube-dl = "*"
 
 [dev-packages]
 black = "*"
