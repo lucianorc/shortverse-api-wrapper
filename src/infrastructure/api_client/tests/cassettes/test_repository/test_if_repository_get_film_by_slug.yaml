@@ -102,13 +102,13 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Fri, 03 Mar 2023 11:18:55 GMT
+      - Fri, 03 Mar 2023 11:36:56 GMT
       Referrer-Policy:
       - origin
       Server:
       - nginx
       Set-Cookie:
-      - sw5_session=WnsjGEGFKL4rb3On401gUJuwyCTdrKJh4cekurPU; path=/; domain=.shortverse.com;
+      - sw5_session=mEhdoR2qEhYF0Em8taG768hmA3zAfOzqQ0CydX1i; path=/; domain=.shortverse.com;
         httponly; samesite=lax
       Transfer-Encoding:
       - chunked
