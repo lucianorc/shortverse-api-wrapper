@@ -3,4 +3,6 @@ addopts = [
     "--cov",
     "--cov-report=xml",
     "--cov-report=html",
+    "--cov-report=term",
+    "--record-mode=once",
 ]

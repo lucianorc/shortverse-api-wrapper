@@ -85,7 +85,7 @@ interactions:
         //SfDS4v27ZV9U1vT+gauLezehFfcDGlfXKJ+vXmvtj9fytf3Nr9TsGXU/DlFHw5fRPh9E2E04V4
         96sMD/EqsGs/xqv4J+XhUTWLLoPbSJh3B/Ajm11ZpfOb1PgbQV8FSPG5M44v5czh4zQVSqujy3K5
         PG976PPL+1h90aiJhhD59jp6m3yFL2fBaeoQ73VH0sSqu8ztkQn8/YmUN2tD8bUAHL7o83vkQGW4
-        oMano/DlL/U1BPrOX/MTZXsfP/4X43voYZZQAAA=
+        oMano/DlL/U1BPrOX/MTHz74+PG/UQdlZZZQAAA=
     headers:
       Access-Control-Allow-Credentials:
       - 'true'
@@ -102,20 +102,20 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Wed, 22 Feb 2023 20:26:22 GMT
+      - Fri, 03 Mar 2023 11:36:56 GMT
       Referrer-Policy:
       - origin
       Server:
       - nginx
       Set-Cookie:
-      - sw5_session=acO1UKhcWRYva8qcMMHC23zpiEIHTeaRuVqtF7fI; path=/; domain=.shortverse.com;
+      - sw5_session=mEhdoR2qEhYF0Em8taG768hmA3zAfOzqQ0CydX1i; path=/; domain=.shortverse.com;
         httponly; samesite=lax
       Transfer-Encoding:
       - chunked
       X-RateLimit-Limit:
       - '60'
       X-RateLimit-Remaining:
-      - '58'
+      - '59'
     status:
       code: 200
       message: OK
