@@ -1,3 +1,3 @@
-# Shortverse API Wrapper
+# Shortverse Kodi Addon
 
-API Wrapper written in Python for Shortverse API.
+A simple indenpendent Kodi client to watch independent short films published in Shortverse
