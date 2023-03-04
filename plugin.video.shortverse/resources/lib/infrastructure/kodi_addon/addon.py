@@ -31,6 +31,7 @@ def get_latest_films():
         )
         list_item.setProperty("IsPlayable", "false")  # For now
         url = get_url(action="play", video=film.source_url)
+        xbmcplugin.addDirectoryItem(_HANDLE, url, list_item)
 
     xbmcplugin.addSortMethod(_HANDLE, xbmcplugin.SORT_METHOD_LABEL_IGNORE_THE)
     xbmcplugin.endOfDirectory(_HANDLE)
