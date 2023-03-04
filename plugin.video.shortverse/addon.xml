@@ -14,7 +14,7 @@
 			A simple indenpendent Kodi client to watch independent short films published in
 			Shortverse
 		</description>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<source>https://github.com/lucianorc/plugin.video.shortverse</source>
 		<website>https://shortverse.com</website>
 		<platform>all</platform>
