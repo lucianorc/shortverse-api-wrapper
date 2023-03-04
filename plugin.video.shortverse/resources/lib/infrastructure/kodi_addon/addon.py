@@ -25,8 +25,16 @@ def get_latest_films():
             "video",
             {
                 "title": film.name,
+                "originaltitle": film.name,
+                "sorttitle": film.name,
+                "director": film.director,
+                "plot": film.long_description,
+                "plotoutline": film.short_description,
+                "duration": film.duration,
+                "aired": film.released_at,
+                "path": film.source_url,
+                "trailer": film.trailer_url,
                 "mediatype": "movie",
-                "plot": film.description,
             },
         )
         list_item.setProperty("IsPlayable", "false")  # For now
