@@ -8,8 +8,8 @@
 		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en_US">Shortverse Add-on</summary>
-		<description lang="en_US">
+		<summary lang="en_GB">Shortverse Add-on</summary>
+		<description lang="en_GB">
 			A simple indenpendent Kodi client to watch independent short films published in
 			Shortverse
 		</description>
@@ -19,7 +19,7 @@
 		<platform>all</platform>
 		<language>en</language>
 		<assets>
-			<icon>resources/icon.png</icon>
+			<icon>resources/assets/icon.png</icon>
 			<fanart>resources/assets/fanart.jpg</fanart>
 		</assets>
 		<reuselanguageinvoker>true</reuselanguageinvoker>
