@@ -1,6 +1,6 @@
 <addon id="plugin.video.shortverse" name="Shortverse" version="0.0.1" provider-name="lucianorc">
 	<requires>
-		<import addon="xbmc.python" version="3.0.1" />
+		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" version="2.27.1" />
 		<import addon="script.module.youtube.dl" version="21.303.0" />
 	</requires>
