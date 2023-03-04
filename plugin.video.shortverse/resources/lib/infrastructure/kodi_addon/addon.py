@@ -13,7 +13,7 @@ shortverse = Handlers()
 
 
 def get_url(**kwargs):
-    return "{}?{}".format(urlencode(kwargs))
+    return "{}?{}".format(_URL, urlencode(kwargs))
 
 
 def get_latest_films():
