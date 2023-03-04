@@ -4,7 +4,7 @@ from urllib.parse import urlencode, parse_qsl
 import xbmcgui
 import xbmcplugin
 
-from lib.infrastructure.api_client.handlers import Handlers
+from resource.lib.infrastructure.api_client.handlers import Handlers
 
 
 _URL = sys.argv[0]
