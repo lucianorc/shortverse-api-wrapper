@@ -1,9 +1,7 @@
-from unittest import TestCase
-
 import pytest
 
-from infrastructure.api_client.client import APIClient
-from infrastructure.api_client.repository import ApiRepository
+from resource.lib.infrastructure.api_client.client import APIClient
+from resource.lib.infrastructure.api_client.repository import ApiRepository
 
 
 @pytest.fixture

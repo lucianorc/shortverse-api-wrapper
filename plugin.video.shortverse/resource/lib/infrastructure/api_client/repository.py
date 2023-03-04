@@ -1,5 +1,5 @@
-from shortverse_service.application.film.film_storage import FilmStorage
-from shortverse_service.application.film.film_dto import FilmDTO
+from resource.lib.shortverse_service.application.film.film_storage import FilmStorage
+from resource.lib.shortverse_service.application.film.film_dto import FilmDTO
 from .model import Film
 from .client import APIClient
 
