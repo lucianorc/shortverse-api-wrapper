@@ -20,8 +20,8 @@
 		<platform>all</platform>
 		<language>en</language>
 		<assets>
-			<icon>resources/assets/icon.png</icon>
-			<fanart>resources/assets/fanart.jpg</fanart>
+			<icon>resources/media/icon.png</icon>
+			<fanart>resources/media/fanart-1.jpg</fanart>
 		</assets>
 		<reuselanguageinvoker>true</reuselanguageinvoker>
 	</extension>
