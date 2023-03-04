@@ -3,7 +3,7 @@ import sys
 import xbmcgui
 import xbmcplugin
 
-from repositories import FilmRepository
+from .repositories import FilmRepository
 
 
 _URL = sys.argv[0]
