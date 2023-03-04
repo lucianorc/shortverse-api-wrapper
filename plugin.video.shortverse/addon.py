@@ -1,3 +1,3 @@
-from resource.lib.infrastructure.kodi_addon import addon
+from resources.lib.infrastructure.kodi_addon import addon
 
 addon.run()

@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 
-from resource.lib.shortverse_service.domain.film.entities import Film
+from resources.lib.shortverse_service.domain.film.entities import Film
 
 
 @dataclass

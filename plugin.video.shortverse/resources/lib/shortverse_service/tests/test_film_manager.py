@@ -3,7 +3,7 @@ from typing import List
 
 import pytest
 
-from resource.lib.shortverse_service.application.film.film_manager import FilmManager
+from resources.lib.shortverse_service.application.film.film_manager import FilmManager
 
 
 @pytest.mark.usefixtures("dummy_storage")

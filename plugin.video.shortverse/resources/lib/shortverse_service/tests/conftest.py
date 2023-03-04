@@ -2,8 +2,8 @@ from datetime import datetime
 
 from pytest import fixture
 
-from resource.lib.shortverse_service.application.film.film_storage import FilmStorage
-from resource.lib.shortverse_service.application.film.film_dto import FilmDTO
+from resources.lib.shortverse_service.application.film.film_storage import FilmStorage
+from resources.lib.shortverse_service.application.film.film_dto import FilmDTO
 
 
 @fixture(scope="class")

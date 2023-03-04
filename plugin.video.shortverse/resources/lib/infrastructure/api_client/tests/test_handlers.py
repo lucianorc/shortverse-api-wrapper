@@ -1,6 +1,6 @@
 import pytest
 
-from resource.lib.infrastructure.api_client.handlers import Handlers
+from resources.lib.infrastructure.api_client.handlers import Handlers
 
 
 @pytest.fixture

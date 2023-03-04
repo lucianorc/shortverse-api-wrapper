@@ -1,7 +1,7 @@
 import pytest
 
-from resource.lib.infrastructure.api_client.client import APIClient
-from resource.lib.infrastructure.api_client.repository import ApiRepository
+from resources.lib.infrastructure.api_client.client import APIClient
+from resources.lib.infrastructure.api_client.repository import ApiRepository
 
 
 @pytest.fixture
